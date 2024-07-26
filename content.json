@@ -1,0 +1,66 @@
+{
+  "martech": {
+    "sections": [
+      {
+        "type": "header",
+        "content": {
+          "title": "Martech View",
+          "subtitle": "Explore my marketing strategies and projects"
+        }
+      },
+      {
+        "type": "text",
+        "content": "Welcome to the Martech View section of my portfolio. Here you can find my marketing expertise and projects."
+      },
+      {
+        "type": "image",
+        "content": {
+          "src": "path/to/marketing-image.jpg",
+          "alt": "Marketing Strategies"
+        }
+      },
+      {
+        "type": "list",
+        "content": {
+          "items": [
+            "Marketing Strategy 1",
+            "Marketing Strategy 2",
+            "Marketing Strategy 3"
+          ]
+        }
+      }
+    ]
+  },
+  "developer": {
+    "sections": [
+      {
+        "type": "header",
+        "content": {
+          "title": "Developer View",
+          "subtitle": "Explore my development projects and skills"
+        }
+      },
+      {
+        "type": "text",
+        "content": "Welcome to the Developer View section of my portfolio. Here you can find my projects and development skills."
+      },
+      {
+        "type": "image",
+        "content": {
+          "src": "path/to/developer-image.jpg",
+          "alt": "Development Projects"
+        }
+      },
+      {
+        "type": "list",
+        "content": {
+          "items": [
+            "Project 1",
+            "Project 2",
+            "Project 3"
+          ]
+        }
+      }
+    ]
+  }
+}

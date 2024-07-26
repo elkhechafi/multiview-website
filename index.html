@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Transition</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        #portfolio {
+            width: 100vw;
+            height: max-content;
+            transition: background-color 0.5s ease;
+            position: relative;
+            overflow: hidden;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+        #portfolio.martech {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        #portfolio.developer {
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+        }
+        .transition-overlay {
+            position: fixed;
+            width: 0;
+            height: 0;
+            transition: all 0.75s ease-in-out;
+            pointer-events: none;
+        }
+        .transition-overlay.to-developer {
+            bottom: 0;
+            right: 0;
+            border-top-left-radius: 100%;
+            background-color: #1a1a1a;
+        }
+        .transition-overlay.to-martech {
+            top: 0;
+            left: 0;
+            border-bottom-right-radius: 100%;
+            background-color: #f0f0f0;
+        }
+        .transition-overlay.active {
+            width: 200vw;
+            height: 200vh;
+        }
+        button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 10;
+        }
+        .section {
+            margin-bottom: 20px;
+            min-height: 100vh;
+        }
+        .section img {
+            max-width: 100%;
+            height: auto;
+        }
+        .section ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="portfolio" class="martech">
+        <!-- Dynamic content will be inserted here -->
+    </div>
+    <div class="transition-overlay"></div>
+    <button id="switch-view">Switch to Developer View</button>
+
+    <script>
+        const portfolio = document.getElementById('portfolio');
+        const switchBtn = document.getElementById('switch-view');
+        const transitionOverlay = document.querySelector('.transition-overlay');
+
+        let isDeveloperView = false;
+
+        const fetchContent = async () => {
+            try {
+                const response = await fetch('content.json');
+                const data = await response.json();
+                return data;
+            } catch (error) {
+                console.error('Error fetching content:', error);
+                return {};
+            }
+        };
+
+        const renderSection = (section) => {
+            let html = '';
+            switch (section.type) {
+                case 'header':
+                    html = `
+                        <div class="section">
+                            <h1>${section.content.title}</h1>
+                            <h2>${section.content.subtitle}</h2>
+                        </div>
+                    `;
+                    break;
+                case 'text':
+                    html = `
+                        <div class="section">
+                            <p>${section.content}</p>
+                        </div>
+                    `;
+                    break;
+                case 'image':
+                    html = `
+                        <div class="section">
+                            <img src="${section.content.src}" alt="${section.content.alt}">
+                        </div>
+                    `;
+                    break;
+                case 'list':
+                    html = `
+                        <div class="section">
+                            <ul>
+                                ${section.content.items.map(item => `<li>${item}</li>`).join('')}
+                            </ul>
+                        </div>
+                    `;
+                    break;
+                default:
+                    console.warn('Unknown section type:', section.type);
+            }
+            return html;
+        };
+
+        const updateContent = async () => {
+            const content = await fetchContent();
+            const currentView = isDeveloperView ? 'developer' : 'martech';
+            const sections = content[currentView]?.sections || [];
+
+            portfolio.innerHTML = sections.map(renderSection).join('');
+        };
+
+        switchBtn.addEventListener('click', async () => {
+            isDeveloperView = !isDeveloperView;
+
+            if (isDeveloperView) {
+                transitionOverlay.classList.add('to-developer');
+                switchBtn.textContent = 'Switch to Martech View';
+            } else {
+                transitionOverlay.classList.add('to-martech');
+                switchBtn.textContent = 'Switch to Developer View';
+            }
+
+            transitionOverlay.classList.add('active');
+
+            setTimeout(() => {
+                if (isDeveloperView) {
+                    portfolio.classList.remove('martech');
+                    portfolio.classList.add('developer');
+                } else {
+                    portfolio.classList.remove('developer');
+                    portfolio.classList.add('martech');
+                }
+
+                // Update content after the transition
+                updateContent();
+
+                setTimeout(() => {
+                    transitionOverlay.classList.remove('active', 'to-martech', 'to-developer');
+                }, 500);
+            }, 375);
+        });
+
+        // Initialize content
+        (async () => {
+            await updateContent();
+        })();
+    </script>
+</body>
+</html>

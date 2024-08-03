@@ -9,6 +9,7 @@
             margin: 0;
             padding: 0;
             height: 100%;
+            position: relative;
         }
         #portfolio {
             width: 100vw;
@@ -54,17 +55,45 @@
         }
         button {
             position: fixed;
-            top: 20px;
-            right: 20px;
+            /* top: 20px;
+            right: 20px; */
             z-index: 10;
+            width: 20%;
+            height: 5vh;
+            border: none;
+        }
+        .switch-button {
+            position: fixed;
+            z-index: 10;
+            transition: all 0.5s ease important;
+        }
+        .switch-button.martech {
+            bottom: 20px;
+            right: 20px;
+        }
+        .switch-button.developer {
+            top: 20px;
+            left: 20px;
+        }
+        .switch-button.fading {
+            opacity: 0;
+            pointer-events: none;
         }
         .section {
             margin-bottom: 20px;
             min-height: 100vh;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
         }
         .section img {
             max-width: 100%;
             height: auto;
+        }
+        .section h1{
+            width: 100%;
         }
         .section ul {
             padding-left: 20px;
@@ -76,7 +105,7 @@
         <!-- Dynamic content will be inserted here -->
     </div>
     <div class="transition-overlay"></div>
-    <button id="switch-view">Switch to Developer View</button>
+    <button id="switch-view" class="switch-button martech">Switch to Developer View</button>
 
     <script>
         const portfolio = document.getElementById('portfolio');
@@ -145,36 +174,47 @@
         };
 
         switchBtn.addEventListener('click', async () => {
-            isDeveloperView = !isDeveloperView;
-
-            if (isDeveloperView) {
-                transitionOverlay.classList.add('to-developer');
-                switchBtn.textContent = 'Switch to Martech View';
-            } else {
-                transitionOverlay.classList.add('to-martech');
-                switchBtn.textContent = 'Switch to Developer View';
-            }
-
-            transitionOverlay.classList.add('active');
-
+                
+            // Wait for the button to fade out
             setTimeout(() => {
+                isDeveloperView = !isDeveloperView;
+            
                 if (isDeveloperView) {
-                    portfolio.classList.remove('martech');
-                    portfolio.classList.add('developer');
+                    transitionOverlay.classList.add('to-developer');
+                    switchBtn.textContent = 'Switch to Martech View';
+                    switchBtn.classList.remove('martech');
+                    switchBtn.classList.add('developer');
                 } else {
-                    portfolio.classList.remove('developer');
-                    portfolio.classList.add('martech');
+                    transitionOverlay.classList.add('to-martech');
+                    switchBtn.textContent = 'Switch to Developer View';
+                    switchBtn.classList.remove('developer');
+                    switchBtn.classList.add('martech');
                 }
-
-                // Update content after the transition
-                updateContent();
-
+            
+                transitionOverlay.classList.add('active');
+            
+            // Start fading out the button
+            switchBtn.classList.add('fading');
                 setTimeout(() => {
-                    transitionOverlay.classList.remove('active', 'to-martech', 'to-developer');
-                }, 500);
-            }, 375);
+                    if (isDeveloperView) {
+                        portfolio.classList.remove('martech');
+                        portfolio.classList.add('developer');
+                    } else {
+                        portfolio.classList.remove('developer');
+                        portfolio.classList.add('martech');
+                    }
+                
+                    // Update content after the transition
+                    updateContent();
+                
+                    setTimeout(() => {
+                        transitionOverlay.classList.remove('active', 'to-martech', 'to-developer');
+                        // Fade the button back in
+                        switchBtn.classList.remove('fading');
+                    }, 500);
+                }, 375);
+            }, 400); // Wait for 500ms (matching the transition time) before starting the main transition
         });
-
         // Initialize content
         (async () => {
             await updateContent();

@@ -4,13 +4,24 @@
       {
         "type": "header",
         "content": {
-          "title": "Martech View",
-          "subtitle": "Explore my marketing strategies and projects"
+          "title": "Zakaria Elkhechafi",
+          "subtitle": "Martech Specialist"
         }
       },
       {
         "type": "text",
-        "content": "Welcome to the Martech View section of my portfolio. Here you can find my marketing expertise and projects."
+        "content": "Welcome to the Martech View section of my portfolio. Where the marketing conveys the data story ."
+      },
+      {
+        "type": "about",
+        "content": {
+          "title": "About Me",
+          "text": "Welcome to my corner of the internet! With a master’s degree in marketing and commercial management, and over eight years of experience working with both small agencies and Fortune 500 companies, I'm here to help your brand shine brighter than a supernova. Whether you need innovative strategies or eye-catching campaigns, consider me your marketing magician. Let's turn your brand into the talk of the town!",
+          "image": {
+            "src": "./assets/img/developerView.png",
+            "alt": "Zakaria Elkhechafi - Martech Specialist"
+          }
+        }
       },
       {
         "type": "image",
@@ -36,13 +47,24 @@
       {
         "type": "header",
         "content": {
-          "title": "Developer View",
-          "subtitle": "Explore my development projects and skills"
+          "title": "Zakaria Elkhechafi",
+          "subtitle": "Passionate self-thaught developper"
         }
       },
       {
         "type": "text",
-        "content": "Welcome to the Developer View section of my portfolio. Here you can find my projects and development skills."
+        "content": "Welcome to the Developer View section of my portfolio, where Development is the art of creating of the recipes that guarantee the succeess"
+      },
+      {
+        "type": "about",
+        "content": {
+          "title": "About Me",
+          "text": "Hey there! I'm a self-taught developer with a knack for creating seamless and efficient web solutions. From crafting dynamic websites with Vue.js and TypeScript to designing engaging user experiences, I turn coffee into code magic. If you need a tech whiz who can build your digital dreams while making sure the journey is as fun as the destination, you've found your developer!",
+          "image": {
+            "src": "./assets/img/developerView.png",
+            "alt": "Zakaria Elkhechafi - Martech Specialist"
+          }
+        }
       },
       {
         "type": "image",

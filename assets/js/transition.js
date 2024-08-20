@@ -42,14 +42,21 @@ const portfolio = document.getElementById('portfolio');
                         </div>
                     `;
                     break;
-                case 'list':
-                    html = `
+                    case 'services':
+                      html = `
                         <div class="section services">
-                            <ul>
-                                ${section.content.items.map(item => `<li>${item}</li>`).join('')}
-                            </ul>
+                            <h2 class="services-title">${section.content.title}</h2>
+                          <ul class="service-cards">
+                            ${section.content.items.map((item, index) => `
+                              <li class="service-card">
+                                <h2>${item.title}</h2>
+                                <p>${item.description}</p>
+                                <img src="${item.icon}" alt="${item.title}" />
+                              </li>
+                            `).join('')}
+                          </ul>
                         </div>
-                    `;
+                      `;
                     break;
                 default:
                     console.warn('Unknown section type:', section.type);

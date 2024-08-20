@@ -31,12 +31,40 @@
         }
       },
       {
-        "type": "list",
+        "type": "services",
         "content": {
+          "title": "Marketing Services",
           "items": [
-            "Marketing Strategy 1",
-            "Marketing Strategy 2",
-            "Marketing Strategy 3"
+            {
+              "title": "Marketing Strategy",
+              "description": "Developing tailored marketing strategies to drive business growth",
+              "icon": "./assets/img/service-icons/marketing-strategy-svgrepo-com.svg"
+            },
+            {
+              "title": "Campaign Management",
+              "description": "Creating and executing campaigns that drive results",
+              "icon": "./assets/img/service-icons/campaign-conversion-generation-svgrepo-com.svg"
+            },
+            {
+              "title": "Data Analysis",
+              "description": "Unlocking insights from data to inform marketing decisions",
+              "icon": "./assets/img/service-icons/data-analysis-svgrepo-com.svg"
+            },
+            {
+              "title": "Content Creation",
+              "description": "Crafting engaging content that resonates with audiences",
+              "icon": "./assets/img/service-icons/edit-content-svgrepo-com.svg"
+            },
+            {
+              "title": "Social Media Management",
+              "description": "Managing social media presence to build brand awareness",
+              "icon": "./assets/img/service-icons/social-media-campaign-svgrepo-com.svg"
+            },
+            {
+              "title": "SEO Optimization",
+              "description": "Optimizing websites for search engines to improve visibility",
+              "icon": "./assets/img/service-icons/seo-optimization-svgrepo-com.svg"
+            }
           ]
         }
       }
@@ -74,12 +102,40 @@
         }
       },
       {
-        "type": "list",
+        "type": "services",
         "content": {
+          "title": "Development Services",
           "items": [
-            "Project 1",
-            "Project 2",
-            "Project 3"
+            {
+              "title": "Web Development",
+              "description": "Building fast, scalable, and secure web applications",
+              "icon": "./assets/img/service-icons/web-development-svgrepo-com(1).svg"
+            },
+            {
+              "title": "Mobile App Development",
+              "description": "Creating mobile apps that delight users",
+              "icon": "./assets/img/service-icons/mobile-development-coding-code-xcode-svgrepo-com.svg"
+            },
+            {
+              "title": "API Integration",
+              "description": "Integrating APIs to enable seamless data exchange",
+              "icon": "./assets/img/service-icons/api-integration-connection-svgrepo-com.svg"
+            },
+            {
+              "title": "Cloud Services",
+              "description": "Migrating and managing applications in the cloud",
+              "icon": "./assets/img/service-icons/cloud-connection-data-svgrepo-com.svg"
+            },
+            {
+              "title": "DevOps",
+              "description": "Streamlining development and deployment processes",
+              "icon": "./assets/img/service-icons/azuredevops-svgrepo-com.svg"
+            },
+            {
+              "title": "Technical Consulting",
+              "description": "Providing expert technical guidance to drive business success",
+              "icon": "./assets/img/service-icons/business-service-svgrepo-com.svg"
+            }
           ]
         }
       }

@@ -32,6 +32,7 @@
       },
       {
         "type": "services",
+        "class": "services",
         "content": {
           "title": "Marketing Services",
           "items": [
@@ -64,6 +65,129 @@
               "title": "SEO Optimization",
               "description": "Optimizing websites for search engines to improve visibility",
               "icon": "./assets/img/service-icons/seo-optimization-svgrepo-com.svg"
+            }
+          ]
+        }
+      },
+      {
+        "type": "portfolio",
+        "class": "portfolio",
+        "content": {
+          "title": "Marketing Playbook: from Concepts to Conversions",
+          "items": [
+            {
+              "order": "one",
+              "title": "Project 1",
+              "description": "Developing tailored marketing strategies to drive business growth",
+              "icon": "./assets/img/service-icons/marketing-strategy-svgrepo-com.svg",
+              "details":{
+                "projectDescription": "This project involved developing a comprehensive marketing strategy for a new product launch.",
+                "projectOutcome": "The campaign resulted in a 25% increase in sales within the first Quarter",
+                "projectTools": "Utilized a combination of social media, email marketing, and influencer collaborator",
+                "projectTimeline": "The project was completed within 6 weeks",
+                "projectBudget": "$10,000",
+                "projectClient": "ABC Corporation",
+                "projectCategory": "Product Launch",
+                "projectTags": ["Marketing Strategy", "Product Launch", "Campaign Execution"],
+                "projectImage": "./assets/img/project-images/project-1-image.jpg",
+                "projectImageAlt": "Project 1 Image",
+                "projectImageCaption": "Image of the product launch campaign"
+              }
+            },
+            {
+              "order": "two",
+              "title": "Project 2",
+              "description": "Creating and executing campaigns that drive results",
+              "icon": "./assets/img/service-icons/campaign-conversion-generation-svgrepo-com.svg",
+              "details":{
+                "projectDescription": "This project involved developing a comprehensive marketing strategy for a new product launch.",
+                "projectOutcome": "The campaign resulted in a 25% increase in sales within the first Quarter",
+                "projectTools": "Utilized a combination of social media, email marketing, and influencer collaborator",
+                "projectTimeline": "The project was completed within 6 weeks",
+                "projectBudget": "$10,000",
+                "projectClient": "ABC Corporation",
+                "projectCategory": "Product Launch",
+                "projectTags": ["Marketing Strategy", "Product Launch", "Campaign Execution"],
+                "projectImage": "./assets/img/project-images/project-1-image.jpg",
+                "projectImageAlt": "Project 1 Image",
+                "projectImageCaption": "Image of the product launch campaign"
+              }
+            },
+            {
+              "order": "three",
+              "title": "Project 3",
+              "description": "Unlocking insights from data to inform marketing decisions",
+              "icon": "./assets/img/service-icons/data-analysis-svgrepo-com.svg",
+              "details":{
+                "projectDescription": "This project involved developing a comprehensive marketing strategy for a new product launch.",
+                "projectOutcome": "The campaign resulted in a 25% increase in sales within the first Quarter",
+                "projectTools": "Utilized a combination of social media, email marketing, and influencer collaborator",
+                "projectTimeline": "The project was completed within 6 weeks",
+                "projectBudget": "$10,000",
+                "projectClient": "ABC Corporation",
+                "projectCategory": "Product Launch",
+                "projectTags": ["Marketing Strategy", "Product Launch", "Campaign Execution"],
+                "projectImage": "./assets/img/project-images/project-1-image.jpg",
+                "projectImageAlt": "Project 1 Image",
+                "projectImageCaption": "Image of the product launch campaign"
+              }
+            },
+            {
+              "order": "four",
+              "title": "Project 4",
+              "description": "Crafting engaging content that resonates with audiences",
+              "icon": "./assets/img/service-icons/edit-content-svgrepo-com.svg",
+              "details":{
+                "projectDescription": "This project involved developing a comprehensive marketing strategy for a new product launch.",
+                "projectOutcome": "The campaign resulted in a 25% increase in sales within the first Quarter",
+                "projectTools": "Utilized a combination of social media, email marketing, and influencer collaborator",
+                "projectTimeline": "The project was completed within 6 weeks",
+                "projectBudget": "$10,000",
+                "projectClient": "ABC Corporation",
+                "projectCategory": "Product Launch",
+                "projectTags": ["Marketing Strategy", "Product Launch", "Campaign Execution"],
+                "projectImage": "./assets/img/project-images/project-1-image.jpg",
+                "projectImageAlt": "Project 1 Image",
+                "projectImageCaption": "Image of the product launch campaign"
+              }
+            },
+            {
+              "order": "five",
+              "title": "Project 5",
+              "description": "Managing social media presence to build brand awareness",
+              "icon": "./assets/img/service-icons/social-media-campaign-svgrepo-com.svg",
+              "details":{
+                "projectDescription": "This project involved developing a comprehensive marketing strategy for a new product launch.",
+                "projectOutcome": "The campaign resulted in a 25% increase in sales within the first Quarter",
+                "projectTools": "Utilized a combination of social media, email marketing, and influencer collaborator",
+                "projectTimeline": "The project was completed within 6 weeks",
+                "projectBudget": "$10,000",
+                "projectClient": "ABC Corporation",
+                "projectCategory": "Product Launch",
+                "projectTags": ["Marketing Strategy", "Product Launch", "Campaign Execution"],
+                "projectImage": "./assets/img/project-images/project-1-image.jpg",
+                "projectImageAlt": "Project 1 Image",
+                "projectImageCaption": "Image of the product launch campaign"
+              }
+            },
+            {
+              "order": "six",
+              "title": "Project 5",
+              "description": "Optimizing websites for search engines to improve visibility",
+              "icon": "./assets/img/service-icons/seo-optimization-svgrepo-com.svg",
+              "details":{
+                "projectDescription": "This project involved developing a comprehensive marketing strategy for a new product launch.",
+                "projectOutcome": "The campaign resulted in a 25% increase in sales within the first Quarter",
+                "projectTools": "Utilized a combination of social media, email marketing, and influencer collaborator",
+                "projectTimeline": "The project was completed within 6 weeks",
+                "projectBudget": "$10,000",
+                "projectClient": "ABC Corporation",
+                "projectCategory": "Product Launch",
+                "projectTags": ["Marketing Strategy", "Product Launch", "Campaign Execution"],
+                "projectImage": "./assets/img/project-images/project-1-image.jpg",
+                "projectImageAlt": "Project 1 Image",
+                "projectImageCaption": "Image of the product launch campaign"
+              }
             }
           ]
         }
@@ -103,6 +227,7 @@
       },
       {
         "type": "services",
+        "class": "services",
         "content": {
           "title": "Development Services",
           "items": [
@@ -135,6 +260,129 @@
               "title": "Technical Consulting",
               "description": "Providing expert technical guidance to drive business success",
               "icon": "./assets/img/service-icons/business-service-svgrepo-com.svg"
+            }
+          ]
+        }
+      },
+      {
+        "type": "portfolio",
+        "class": "portfolio",
+        "content": {
+          "title": "Tech Innovation Portfolio",
+          "items": [
+            {
+              "order": "one",
+              "title": "Project 1",
+              "description": "Developing tailored marketing strategies to drive business growth",
+              "icon": "./assets/img/service-icons/marketing-strategy-svgrepo-com.svg",
+              "details":{
+                "projectDescription": "This project involved developing a comprehensive marketing strategy for a new product launch.",
+                "projectOutcome": "The campaign resulted in a 25% increase in sales within the first Quarter",
+                "projectTools": "Utilized a combination of social media, email marketing, and influencer collaborator",
+                "projectTimeline": "The project was completed within 6 weeks",
+                "projectBudget": "$10,000",
+                "projectClient": "ABC Corporation",
+                "projectCategory": "Product Launch",
+                "projectTags": ["Marketing Strategy", "Product Launch", "Campaign Execution"],
+                "projectImage": "./assets/img/project-images/project-1-image.jpg",
+                "projectImageAlt": "Project 1 Image",
+                "projectImageCaption": "Image of the product launch campaign"
+              }
+            },
+            {
+              "order": "two",
+              "title": "Project 2",
+              "description": "Creating and executing campaigns that drive results",
+              "icon": "./assets/img/service-icons/campaign-conversion-generation-svgrepo-com.svg",
+              "details":{
+                "projectDescription": "This project involved developing a comprehensive marketing strategy for a new product launch.",
+                "projectOutcome": "The campaign resulted in a 25% increase in sales within the first Quarter",
+                "projectTools": "Utilized a combination of social media, email marketing, and influencer collaborator",
+                "projectTimeline": "The project was completed within 6 weeks",
+                "projectBudget": "$10,000",
+                "projectClient": "ABC Corporation",
+                "projectCategory": "Product Launch",
+                "projectTags": ["Marketing Strategy", "Product Launch", "Campaign Execution"],
+                "projectImage": "./assets/img/project-images/project-1-image.jpg",
+                "projectImageAlt": "Project 1 Image",
+                "projectImageCaption": "Image of the product launch campaign"
+              }
+            },
+            {
+              "order": "three",
+              "title": "Project 3",
+              "description": "Unlocking insights from data to inform marketing decisions",
+              "icon": "./assets/img/service-icons/data-analysis-svgrepo-com.svg",
+              "details":{
+                "projectDescription": "This project involved developing a comprehensive marketing strategy for a new product launch.",
+                "projectOutcome": "The campaign resulted in a 25% increase in sales within the first Quarter",
+                "projectTools": "Utilized a combination of social media, email marketing, and influencer collaborator",
+                "projectTimeline": "The project was completed within 6 weeks",
+                "projectBudget": "$10,000",
+                "projectClient": "ABC Corporation",
+                "projectCategory": "Product Launch",
+                "projectTags": ["Marketing Strategy", "Product Launch", "Campaign Execution"],
+                "projectImage": "./assets/img/project-images/project-1-image.jpg",
+                "projectImageAlt": "Project 1 Image",
+                "projectImageCaption": "Image of the product launch campaign"
+              }
+            },
+            {
+              "order": "four",
+              "title": "Project 4",
+              "description": "Crafting engaging content that resonates with audiences",
+              "icon": "./assets/img/service-icons/edit-content-svgrepo-com.svg",
+              "details":{
+                "projectDescription": "This project involved developing a comprehensive marketing strategy for a new product launch.",
+                "projectOutcome": "The campaign resulted in a 25% increase in sales within the first Quarter",
+                "projectTools": "Utilized a combination of social media, email marketing, and influencer collaborator",
+                "projectTimeline": "The project was completed within 6 weeks",
+                "projectBudget": "$10,000",
+                "projectClient": "ABC Corporation",
+                "projectCategory": "Product Launch",
+                "projectTags": ["Marketing Strategy", "Product Launch", "Campaign Execution"],
+                "projectImage": "./assets/img/project-images/project-1-image.jpg",
+                "projectImageAlt": "Project 1 Image",
+                "projectImageCaption": "Image of the product launch campaign"
+              }
+            },
+            {
+              "order": "five",
+              "title": "Project 5",
+              "description": "Managing social media presence to build brand awareness",
+              "icon": "./assets/img/service-icons/social-media-campaign-svgrepo-com.svg",
+              "details":{
+                "projectDescription": "This project involved developing a comprehensive marketing strategy for a new product launch.",
+                "projectOutcome": "The campaign resulted in a 25% increase in sales within the first Quarter",
+                "projectTools": "Utilized a combination of social media, email marketing, and influencer collaborator",
+                "projectTimeline": "The project was completed within 6 weeks",
+                "projectBudget": "$10,000",
+                "projectClient": "ABC Corporation",
+                "projectCategory": "Product Launch",
+                "projectTags": ["Marketing Strategy", "Product Launch", "Campaign Execution"],
+                "projectImage": "./assets/img/project-images/project-1-image.jpg",
+                "projectImageAlt": "Project 1 Image",
+                "projectImageCaption": "Image of the product launch campaign"
+              }
+            },
+            {
+              "order": "six",
+              "title": "Project 5",
+              "description": "Optimizing websites for search engines to improve visibility",
+              "icon": "./assets/img/service-icons/seo-optimization-svgrepo-com.svg",
+              "details":{
+                "projectDescription": "This project involved developing a comprehensive marketing strategy for a new product launch.",
+                "projectOutcome": "The campaign resulted in a 25% increase in sales within the first Quarter",
+                "projectTools": "Utilized a combination of social media, email marketing, and influencer collaborator",
+                "projectTimeline": "The project was completed within 6 weeks",
+                "projectBudget": "$10,000",
+                "projectClient": "ABC Corporation",
+                "projectCategory": "Product Launch",
+                "projectTags": ["Marketing Strategy", "Product Launch", "Campaign Execution"],
+                "projectImage": "./assets/img/project-images/project-1-image.jpg",
+                "projectImageAlt": "Project 1 Image",
+                "projectImageCaption": "Image of the product launch campaign"
+              }
             }
           ]
         }
